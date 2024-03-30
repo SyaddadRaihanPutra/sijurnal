@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SiJurnal | Hero Pages</title>
     <link rel="icon" type="image/x-icon" href="http://101.255.104.18:1010/assets/static/favicon.ico">
-    <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="theme-color" content="#ffffff">
-    <link href="http://101.255.104.18:1010/assets-hero/assets/css/theme.css" rel="stylesheet" />
+    <link href="./assets/css/theme.css" rel="stylesheet" />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9GKE6FWWBW"></script>
@@ -778,37 +777,15 @@
             </div>
         </section>
     </main>
-    <script src="http://101.255.104.18:1010/assets-hero/vendors/@popperjs/popper.min.js"></script>
-    <script src="http://101.255.104.18:1010/assets-hero/vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="http://101.255.104.18:1010/assets-hero/vendors/is/is.min.js"></script>
+    <script src="./vendors/@popperjs/popper.min.js"></script>
+    <script src="./vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="./vendors/is/is.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
-    <script src="http://101.255.104.18:1010/assets-hero/assets/js/theme.js"></script>
+    <script src="./assets/js/theme.js"></script>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&amp;display=swap"
         rel="stylesheet">
-
-    <script>
-        fetch('http://101.255.104.18:1010/api/v1/settings')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json(); // Mengubah response menjadi objek JSON
-            })
-            .then(data => {
-                const schoolLogo = data.school_logo;
-                // Mendapatkan elemen gambar dengan id 'logo_aplikasi'
-                const logoElement = document.getElementById('logo_aplikasi');
-                const logoElement2 = document.getElementById('logo_aplikasi2');
-                // Mengubah atribut src dengan URL logo dari respons fetch
-                logoElement.src = schoolLogo;
-                logoElement2.src = schoolLogo;
-            })
-            .catch(error => {
-                console.error('There was a problem with the fetch operation:', error);
-            });
-    </script>
 </body>
 
 </html>
