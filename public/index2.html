@@ -19,7 +19,24 @@
 
         gtag('config', 'G-9GKE6FWWBW');
     </script>
-
+    <style>
+        @keyframes moveUpDown {
+            0% {
+                transform: translateY(0); /* Posisi awal */
+            }
+            50% {
+                transform: translateY(-10px); /* Posisi tengah */
+            }
+            100% {
+                transform: translateY(0); /* Posisi akhir, kembali ke posisi awal */
+            }
+        }
+        
+        .animated-image {
+            animation: moveUpDown 3s ease infinite; /* Mengatur animasi selama 2 detik dan diulang secara tak terbatas */
+        }
+        
+    </style>
 </head>
 
 <body>
@@ -27,7 +44,8 @@
         <nav class="py-3 bg-white navbar navbar-expand-lg navbar-light fixed-top"
             data-navbar-on-scroll="data-navbar-on-scroll">
             <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="/">
-                    <img class="me-2" src="#" id="logo_aplikasi" alt="" width="150" />
+                    <img class="me-2" src="./storage/school_logo/1710324832_sijurnal-logo.svg" id="logo_aplikasi" alt=""
+                        width="150" />
                 </a>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -52,35 +70,41 @@
                 </div>
             </div>
         </nav>
-        <section class="py-0" id="home">
+        <section class="py-0" id="home" style="overflow: hidden;">
             <div class="bg-holder"
-                style="background-image:url({{ asset('assets-hero/assets/img/illustrations/hero-bg.png') }});background-position:bottom;background-size:cover;">
+                style="background-image:url('./assets/img/hero-bg.png');background-position:bottom;background-size:cover;">
             </div>
             <div class="container position-relative">
                 <div class="py-8 row align-items-center">
-                    <div class="text-center col-md-5 col-lg-6 order-md-1 text-md-end"><img class="img-fluid"
-                            src="{{ asset('assets-hero/assets/img/illustrations/mobile.png') }}" width="350" alt="" />
+                    <div class="text-center col-md-5 col-lg-6 order-md-1 text-md-end">
+                        <img class="img-fluid animated-image"
+                             src="./assets/img/macbook-pro-6607dee19ddccecf29cbcbbd-@2x.png" alt="Hero"
+                             style="filter: drop-shadow(10px 8px 18px rgba(0, 0, 0, 0.4));" />
                     </div>
-                    <div class="text-center col-md-7 col-lg-6 text-md-start">
+                    <div class="text-center col-md-7 col-lg-6 text-md-start parallax-container">
                         <h1 class="mb-4 display-3 fw-bold lh-sm">Tumbuhkan <br
                                 class="d-block d-lg-none d-xl-block" />Pendidik Unggul</h1>
                         <p class="mt-3 mb-4 fs-1">Sistem Informasi yang mendukung guru dalam mengelola jurnal mengajar
                             harian.</p><a class="btn btn-lg btn-primary rounded-pill hover-top me-3" href="#"
                             role="button">Coba sekarang</a>
-                            <button class="btn btn-link rounded-pill text-decoration-none" data-bs-toggle="modal"
+                        <button class="btn btn-outline-primary btn-lg rounded-pill" data-bs-toggle="modal"
                             data-bs-target="#modalLogin" role="button">Video Demo</button>
-                        
-                            <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel"
+
+                        <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="modalLoginLabel">Panduan Penggunaan</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                        <div class="embed-responsive embed-responsive-16by9" style="width: 100%; height: 100%;">
-                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kapqLVVuAzk?si=wkSLNOAhvoy22UC1" title="YouTube video player" allowfullscreen></iframe>
+                                        <div class="embed-responsive embed-responsive-16by9"
+                                            style="width: 100%; height: 100%;">
+                                            <iframe class="embed-responsive-item"
+                                                src="https://www.youtube.com/embed/kapqLVVuAzk?si=wkSLNOAhvoy22UC1"
+                                                title="YouTube video player" allowfullscreen></iframe>
                                         </div>
                                     </div>
                                 </div>
@@ -94,120 +118,59 @@
             <div class="container">
                 <div class="row">
                     <div class="mx-auto text-center col-12 align-items-center">
-                        <p class="mb-4">Trusted by companies like</p>
+                        <p class="mb-4">Bekerja sama dengan</p>
                     </div>
                 </div>
                 <div class="row align-items-center justify-content-center justify-content-lg-around">
                     <div class="mb-5 text-center col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-lg-0"><img
-                            src="{{ asset('assets/img/gallery/company-1.png') }}" alt="" /></div>
+                            src="./storage/school_logo/SMKN1-JAKARTA.png" alt="SMKN 1 Jakarta" width="100" /></div>
                     <div class="mb-5 text-center col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-lg-0"><img
-                            src="{{ asset('assets/img/gallery/company-2.png') }}" alt="" /></div>
+                            src="./storage/school_logo/SMKN69-JAKARTA.jpg" alt="SMKN 69 Jakarta" width="75" /></div>
                     <div class="mb-5 text-center col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-lg-0"><img
-                            src="{{ asset('assets/img/gallery/company-3.png') }}" alt="" /></div>
+                            src="./storage/school_logo/SMKN70-JAKARTA.jpg" alt="SMKN 70 Jakarta" width="100" /></div>
                     <div class="mb-5 text-center col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-lg-0"><img
-                            src="{{ asset('assets/img/gallery/company-4.png') }}" alt="" /></div>
-                    <div class="mb-5 text-center col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-lg-0"><img
-                            src="{{ asset('assets/img/gallery/company-1.png') }}" alt="" /></div>
+                            src="./storage/school_logo/SMK-Kampung-Jawa.png" alt="SMKS Kampung Jawa" width="100" /></div>
                 </div>
             </div>
         </section>
         <section class="py-5" id="features">
             <div class="container-lg">
                 <div class="row align-items-center">
-                    <div class="text-center col-md-5 col-lg-6 order-md-0 text-md-start"><img class="img-fluid"
-                            src="{{ asset('assets-hero/assets/img/illustrations/feature-bg.png') }}" width="550"
-                            alt="" /></div>
+                    <div class="text-center col-md-5 col-lg-6 order-md-0 text-md-start animated-image"><img class="img-fluid"
+                            src="./assets/img/features.png" width="850"
+                            alt="Fitur" style="filter: drop-shadow(10px 8px 18px rgba(0, 0, 0, 0.4));" />
+                    </div>
                     <div class="col-md-7 col-lg-6 px-sm-5 px-md-0">
-                        <h6 class="fw-bold fs-4 display-3 lh-sm">Awesome apps <br />features</h6>
-                        <p class="my-4">Increase productivity with a simple to-do app. app for <br
-                                class="d-none d-xl-block" />managing your personal budgets.</p>
+                        <h6 class="fw-bold fs-4 display-3 lh-sm mt-5">Fitur utama <br />aplikasi</h6>
+                        <p class="my-4">Menyediakan fitur-fitur yang mendukung guru dalam <br class="d-none d-xl-block" />mengelola jurnal mengajar
+                            harian.</p>
                         <div class="mb-5 d-flex align-items-center">
                             <div><img class="img-fluid"
-                                    src="{{ asset('assets-hero/assets/img/illustrations/fast-performance.png') }}"
+                                    src="./assets/img/fast.png"
                                     width="90" alt="" /></div>
                             <div class="px-4">
-                                <h5 class="fw-bold text-danger">Fast performance</h5>
-                                <p>Get your blood tests delivered at <br class="d-none d-xl-block"> home collect a
-                                    sample from the <br class="d-none d-xl-block"> news your blood tests</p>
+                                <h5 class="fw-bold text-danger">Tampilan responsif</h5>
+                                <p>Aplikasi ini dapat diakses melalui perangkat <br class="d-none d-xl-block" />apapun, baik itu smartphone, tablet, atau komputer.</p>
                             </div>
                         </div>
                         <div class="mb-5 d-flex align-items-center">
                             <div><img class="img-fluid"
-                                    src="{{ asset('assets-hero/assets/img/illustrations/prototype.png') }}" width="90"
+                                    src="./assets/img/prototyping.png" width="90"
                                     alt="" /></div>
                             <div class="px-4">
-                                <h5 class="fw-bold text-primary">Prototyping</h5>
-                                <p>Get your blood tests delivered at <br class="d-none d-xl-block"> home collect a
-                                    sample from the <br class="d-none d-xl-block"> news your blood tests</p>
+                                <h5 class="fw-bold text-primary">Pencatatan kehadiran</h5>
+                                <p>Guru dapat mencatat kehadiran siswa secara <br class="d-none d-xl-block" />langsung melalui aplikasi ini.</p>
                             </div>
                         </div>
                         <div class="mb-5 d-flex align-items-center">
                             <div><img class="img-fluid"
-                                    src="{{ asset('assets-hero/assets/img/illustrations/vector.png') }}" width="90"
+                                    src="./assets/img/vector.png" width="90"
                                     alt="" /></div>
                             <div class="px-4">
-                                <h5 class="fw-bold text-success">Vector Editing</h5>
-                                <p>Get your blood tests delivered at <br class="d-none d-xl-block"> home collect a
-                                    sample from the <br class="d-none d-xl-block"> news your blood tests</p>
+                                <h5 class="fw-bold text-success">Export data</h5>
+                                <p>Guru dapat mengekspor data jurnal mengajar <br class="d-none d-xl-block" />serta absensi dalam bentuk file excel.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="py-5">
-            <div class="container">
-                <div class="mb-6 row align-items-center">
-                    <div class="col-md-5 col-lg-4 offset-lg-1">
-                        <h1 class="fw-bold lh-base">Smart jackpots that you may love this anytime &amp; anywhere</h1>
-                    </div>
-                    <div class="py-5 col-md-6 col-lg-5 offset-lg-1 border-start ps-5">
-                        <p class="mb-0">The rise of mobile devices transforms the way we consume information entirely
-                            and the world's most elevant channels such as Facebook.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="mb-4 col-md-4 col-lg-3 offset-lg-1">
-                        <div class="py-4"><img class="img-fluid"
-                                src="{{ asset('assets-hero/assets/img/illustrations/automatic.png') }}" width="90"
-                                alt="" /></div>
-                        <h5 class="fw-bold text-danger">Fast performance</h5>
-                        <p class="mt-2 mb-0">Get your blood tests delivered at home collect a sample from the news your
-                            blood tests.</p>
-                    </div>
-                    <div class="mb-4 col-md-4 col-lg-3 offset-lg-1">
-                        <div class="py-4"><img class="img-fluid"
-                                src="{{ asset('assets-hero/assets/img/illustrations/network.png') }}" width="90"
-                                alt="" /></div>
-                        <h5 class="fw-bold text-primary">Prototyping</h5>
-                        <p class="mt-2 mb-0">Get your blood tests delivered at home collect a sample from the news your
-                            blood tests.</p>
-                    </div>
-                    <div class="mb-4 col-md-4 col-lg-3 offset-lg-1">
-                        <div class="py-4"><img class="img-fluid"
-                                src="{{ asset('assets-hero/assets/img/illustrations/rewards.png') }}" width="90"
-                                alt="" /></div>
-                        <h5 class="fw-bold text-success">Vector Editing</h5>
-                        <p class="mt-2 mb-0">Get your blood tests delivered at home collect a sample from the news your
-                            blood tests.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="py-6">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="text-center col-md-5 order-md-0 text-md-start"><img class="mb-4 img-fluid"
-                            src="{{ asset('assets-hero/assets/img/illustrations/call-to-action.png') }}" width="550"
-                            alt="" /></div>
-                    <div class="text-center col-md-6 text-md-start offset-md-1">
-                        <h6 class="fw-bold fs-4 display-3 lh-sm">Designed &amp; built by<br />the latest code
-                            <br />integration
-                        </h6>
-                        <p class="my-4 pe-xl-5"> The rise of mobile devices transforms the way we consume information
-                            entirely and the world's most elevant channels such as Facebook.</p><a
-                            class="btn btn-lg btn-primary rounded-pill hover-top" href="#" role="button">Learn
-                            more</a>
                     </div>
                 </div>
             </div>
@@ -707,25 +670,9 @@
                 <div class="row flex-center">
                     <div class="col-auto mb-5"><a
                             class="pe-2 d-flex align-items-center text-decoration-none fw-bold fs-3" href="#">
-                            <img src="#" id="logo_aplikasi2" width="150" alt="Logo"
-                                style="filter: brightness(0) invert(1);" />
+                            <img src="./storage/school_logo/1710324832_sijurnal-logo.svg" id="logo_aplikasi2"
+                                width="150" alt="Logo" style="filter: brightness(0) invert(1);" />
                         </a></div>
-                </div>
-                <div class="row flex-center">
-                    <div class="col-auto mb-5">
-                        <ul class="mb-0 list-unstyled list-inline">
-                            <li class="list-inline-item me3 me-sm-4"><a class="text-light text-decoration-none"
-                                    href="#!">Home</a></li>
-                            <li class="list-inline-item me3 me-sm-4"><a class="text-light text-decoration-none"
-                                    href="#!">Key Features</a></li>
-                            <li class="list-inline-item me3 me-sm-4"><a class="text-light text-decoration-none"
-                                    href="#!">Pricing</a></li>
-                            <li class="list-inline-item me3 me-sm-4"><a class="text-light text-decoration-none"
-                                    href="#!">Testimonial</a></li>
-                            <li class="list-inline-item me3 me-sm-4"><a class="text-light text-decoration-none"
-                                    href="#!">FAQ</a></li>
-                        </ul>
-                    </div>
                 </div>
                 <div class="row flex-center">
                     <div class="col-auto mb-5">

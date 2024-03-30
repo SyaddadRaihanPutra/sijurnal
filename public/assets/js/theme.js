@@ -378,3 +378,10 @@ docReady(navbarInit);
 docReady(detectorInit);
 docReady(scrollToTop);
 //# sourceMappingURL=theme.js.map
+
+// Mendefinisikan variabel untuk menyimpan posisi scroll sebelumnya
+window.addEventListener('scroll', function(){
+  const container = document.querySelector('.parallax-container');
+  let scrollPosition = window.pageYOffset;
+  container.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)'; // Mengatur efek parallax
+});
