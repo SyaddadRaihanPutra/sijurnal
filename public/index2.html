@@ -9,6 +9,9 @@
     <link rel="icon" type="image/x-icon" href="http://101.255.104.18:1010/assets/static/favicon.ico">
     <meta name="theme-color" content="#ffffff">
     <link href="./assets/css/theme.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&amp;display=swap"
         rel="stylesheet">
@@ -26,8 +29,7 @@
 
 <body>
     <main class="main" id="top">
-        <nav class="py-3 navbar navbar-expand-lg navbar-light fixed-top"
-            data-navbar-on-scroll="data-navbar-on-scroll">
+        <nav class="py-3 navbar navbar-expand-lg navbar-light fixed-top" data-navbar-on-scroll="data-navbar-on-scroll">
             <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="/">
                     <img class="me-2" src="./storage/school_logo/1710324832_sijurnal-logo.svg" id="logo_aplikasi" alt=""
                         width="150" />
@@ -73,11 +75,14 @@
                                 class="d-block d-lg-none d-xl-block" />Pendidik Unggul</h1>
                         <p class="mt-3 mb-4 fs-1">Sistem Informasi yang mendukung guru dalam mengelola jurnal mengajar
                             harian.</p>
-                            <div class="d-flex flex-wrap">
-                                <button class="btn btn-primary rounded-pill mb-3 me-md-3 col-md-auto col-12" data-bs-toggle="modal" data-bs-target="#modalLogin" role="button">Coba Sekarang</button>
-                                <button class="btn btn-outline-primary rounded-pill mb-3 col-md-auto col-12" data-bs-toggle="modal" data-bs-target="#modalDemo" role="button">Panduan Pengguna</button>
-                            </div>
-                            
+                        <div class="d-flex flex-wrap">
+                            <button class="btn btn-primary rounded-pill mb-3 me-md-3 col-md-auto col-12"
+                                data-bs-toggle="modal" data-bs-target="#modalLogin" role="button">Coba Sekarang</button>
+                            <button class="btn btn-outline-primary rounded-pill mb-3 col-md-auto col-12"
+                                data-bs-toggle="modal" data-bs-target="#modalDemo" role="button">Panduan
+                                Pengguna</button>
+                        </div>
+
                         <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
@@ -524,7 +529,7 @@
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body bg-100">Sijurnal menyediakan platform yang mudah
                                         digunakan di mana guru dapat dengan cepat mencatat kegiatan harian mereka,
-                                        termasuk materi yang diajarkan, evaluasi siswa, catatan penting, dan lainnya.
+                                        termasuk materi yang diajarkan, dan lainnya.
                                     </div>
                                 </div>
                             </div>
@@ -553,8 +558,7 @@
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body bg-100">Sijurnal tersedia secara daring, yang berarti
                                         guru dapat mengaksesnya melalui perangkat apa pun yang terhubung ke internet.
-                                        Namun, penggunaan offline mungkin tersedia dalam beberapa kasus, tergantung pada
-                                        fitur aplikasi dan preferensi pengguna</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="mb-2 accordion-item">
@@ -655,6 +659,42 @@
                 </div>
             </div>
         </section>
+        <!-- Include JS Cookie library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+
+        <!-- Modal -->
+        <div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cookieModalLabel">Cookie Consent</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>This website uses cookies to ensure you get the best experience on our website.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            window.onload = function () {
+                if (!Cookies.get('cookie_consent')) {
+                    $('#cookieModal').modal('show');
+                }
+            }
+
+            $('#cookieModal .btn-primary').click(function () {
+                Cookies.set('cookie_consent', 'true', {
+                    expires: 365
+                });
+                $('#cookieModal').modal('hide');
+            });
+        </script>
+
     </main>
 
 
