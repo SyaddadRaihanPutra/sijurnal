@@ -1,67 +1,708 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-bs-theme="dark" data-color-theme="Blue_Theme" data-layout="vertical">
+<html lang="en-US" dir="ltr">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SiJurnal | Hero Pages</title>
+    <link rel="icon" type="image/x-icon" href="http://101.255.104.18:1010/assets/static/favicon.ico">
+    <meta name="theme-color" content="#ffffff">
+    <link href="./assets/css/theme.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9GKE6FWWBW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    <!-- Favicon icon-->
-    <link rel="shortcut icon" type="image/png"
-        href="https://ifulxploit.github.io/Spike-Bootstrap-Admin-Dashboard/assets/images/logos/favicon.png" />
-
-    <!-- Core Css -->
-    <link rel="stylesheet" href="https://ifulxploit.github.io/Spike-Bootstrap-Admin-Dashboard/assets/css/styles.css" />
-
-    <title>Spike Bootstrap Admin</title>
+        gtag('config', 'G-9GKE6FWWBW');
+    </script>
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <img src="https://ifulxploit.github.io/Spike-Bootstrap-Admin-Dashboard/assets/images/logos/loader.svg"
-            alt="loader" class="lds-ripple img-fluid" />
-    </div>
-    <div id="main-wrapper" class="p-0">
-        <div class="position-relative overflow-hidden min-vh-100 d-flex align-items-center justify-content-center">
-            <div class="d-flex align-items-center justify-content-center w-100">
-                <div class="row justify-content-center w-100">
-                    <div class="col-lg-4">
-                        <div class="text-center">
-                            <img src="https://ifulxploit.github.io/Spike-Bootstrap-Admin-Dashboard/assets/images/backgrounds/maintenance.svg"
-                                alt="" class="img-fluid" width="500" />
-                            <h1 class="fw-semibold my-6 fs-9">Maintenance Mode!!!</h1>
-                            <h4 class="fw-semibold mb-6">
-                                Website is Under Construction. Check back later!
-                            </h4>
-                            <!--<a
-                  class="btn btn-primary rounded-pill"
-                  href="../dark/index.html"
-                  role="button"
-                  >Go Back to Home</a
-                >-->
+    <main class="main" id="top">
+        <nav class="py-3 navbar navbar-expand-lg navbar-light fixed-top" data-navbar-on-scroll="data-navbar-on-scroll">
+            <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="/">
+                    <img class="me-2" src="./storage/school_logo/1710324832_sijurnal-logo.svg" id="logo_aplikasi" alt=""
+                        width="150" />
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="mt-4 collapse navbar-collapse border-top border-lg-0 mt-lg-0" id="navbarSupportedContent">
+                    <ul class="pt-2 navbar-nav ms-auto pt-lg-0">
+                        <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium active"
+                                aria-current="page" href="#home">Beranda</a></li>
+                        <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium"
+                                href="#features">Fitur</a></li>
+                        <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium"
+                                href="#manfaat">Manfaat</a></li>
+                        <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium"
+                                href="#testimonial">Testimonial</a></li>
+                        <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium" href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+                    <hr class="d-lg-none" />
+                    <div class="ps-lg-5">
+                        <button class="btn btn-lg btn-primary col-12 rounded-pill hover-top me-3" data-bs-toggle="modal"
+                            data-bs-target="#modalLogin" role="button">Daftar</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="py-0 " id="home" style="overflow: hidden;">
+            <div class="bg-holder"
+                style="background-image:url('./assets/img/hero-bg.png');background-position:bottom;background-size:cover;">
+            </div>
+            <div class="container position-relative">
+                <div class="py-8 row align-items-center">
+                    <div class="text-center col-md-5 col-lg-6 order-md-1 text-md-end " style="z-index: 999;">
+                        <img class="img-fluid animated-image"
+                            src="./assets/img/macbook-pro-6607dee19ddccecf29cbcbbd-@2x.png" alt="Hero"
+                            style="filter: drop-shadow(10px 8px 18px rgba(0, 0, 0, 0.4));" />
+                    </div>
+                    <div class="text-center col-md-7 col-lg-6 text-md-start">
+                        <h1 class="mb-4 display-3 fw-bold lh-sm">Tumbuhkan <br
+                                class="d-block d-lg-none d-xl-block" />Pendidik Unggul</h1>
+                        <p class="mt-3 mb-4 fs-1">Sistem Informasi yang mendukung guru dalam mengelola jurnal mengajar
+                            harian.</p>
+                        <div class="d-flex flex-wrap">
+                            <button class="btn btn-primary rounded-pill mb-3 me-md-3 col-md-auto col-12"
+                                data-bs-toggle="modal" data-bs-target="#modalLogin" role="button">Coba Sekarang</button>
+                            <button class="btn btn-outline-primary rounded-pill mb-3 col-md-auto col-12"
+                                data-bs-toggle="modal" data-bs-target="#modalDemo" role="button">Panduan
+                                Pengguna</button>
+                        </div>
+
+                        <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content p-2">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalLoginLabel">Formulir Pendaftaran</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form id="regisForm" class="row g-3 text-start"
+                                            action="https://formspree.io/f/xrgnyykk" method="POST">
+                                            <div class="col-md-6">
+                                                <label for="inputName" class="form-label">Operator Sekolah <span
+                                                        class="text-danger"><small>*</small></span></label>
+                                                <input type="text" class="form-control" id="inputName" name="operator"
+                                                    required placeholder="Wanto Ari Wibowo">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputSchool" class="form-label">Nama Sekolah <span
+                                                        class="text-danger"><small>*</small></span></label>
+                                                <input type="text" class="form-control" id="inputSchool" name="sekolah"
+                                                    required placeholder="SMK Negeri 1 Jakarta">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputNPSN" class="form-label">NPSN <span
+                                                        class="text-danger"><small>*</small></span></label>
+                                                <input type="number" class="form-control" id="inputNPSN" name="npsn"
+                                                    required placeholder="20100143">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputEmail" class="form-label">Email <span
+                                                        class="text-danger"><small>*</small></span></label>
+                                                <input type="email" class="form-control" id="inputEmail" name="email"
+                                                    required placeholder="wanto@gmail.com">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputPhone" class="form-label">No. Telepon <span
+                                                        class="text-danger"><small>*</small></span></label>
+                                                <input type="tel" class="form-control" id="inputPhone" name="telepon"
+                                                    required placeholder="081345678">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="inputMessage" class="form-label">Alamat <span
+                                                        class="text-danger"><small>*</small></span></label>
+                                                <textarea class="form-control" id="inputMessage" rows="3" name="alamat"
+                                                    required placeholder="Jl. Budi Utomo No.7, Ps. Baru"></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-secondary col-12">Kirim</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="modalDemo" tabindex="-1" aria-labelledby="modalLoginLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modalLoginLabel">Panduan Pengguna</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="embed-responsive embed-responsive-16by9"
+                                            style="width: 100%; height: 100%;">
+                                            <iframe class="embed-responsive-item"
+                                                src="https://www.youtube.com/embed/kapqLVVuAzk?si=wkSLNOAhvoy22UC1"
+                                                title="YouTube video player" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="dark-transparent sidebartoggler"></div>
-    </div>
-    <!-- Import Js Files -->
-    <script
-        src="https://ifulxploit.github.io/Spike-Bootstrap-Admin-Dashboard/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script
-        src="https://ifulxploit.github.io/Spike-Bootstrap-Admin-Dashboard/assets/libs/simplebar/dist/simplebar.min.js"></script>
-    <script
-        src="https://ifulxploit.github.io/Spike-Bootstrap-Admin-Dashboard/assets/js/theme/app.dark.init.js"></script>
-    <script src="https://ifulxploit.github.io/Spike-Bootstrap-Admin-Dashboard/assets/js/theme/theme.js"></script>
-    <script src="https://ifulxploit.github.io/Spike-Bootstrap-Admin-Dashboard/assets/js/theme/app.min.js"></script>
-    <script src="https://ifulxploit.github.io/Spike-Bootstrap-Admin-Dashboard/assets/js/theme/sidebarmenu.js"></script>
-    <script src="https://ifulxploit.github.io/Spike-Bootstrap-Admin-Dashboard/assets/js/theme/feather.min.js"></script>
+        </section>
+        <section class="py-7">
+            <div class="container">
+                <div class="row">
+                    <div class="mx-auto text-center col-12 align-items-center">
+                        <h6 class="mb-5 fw-bold fs-4 display-3 lh-sm mt-5">Bekerja sama dengan</h6>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center justify-content-lg-around">
+                    <div class="mb-5 text-center col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-lg-0">
+                        <img style="cursor: pointer;" src="./storage/school_logo/SMKN1-JAKARTA.png" alt="SMKN 1 Jakarta"
+                            width="100" />
+                        <p class="mb-0 mt-2">SMKN 1 Jakarta</p>
+                    </div>
+                    <div class="mb-5 text-center col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-lg-0">
+                        <img style="cursor: pointer;" src="./storage/school_logo/SMKN69-JAKARTA.jpg"
+                            alt="SMKN 69 Jakarta" width="75" />
+                        <p class="mb-0 mt-2">SMKN 69 Jakarta</p>
+                    </div>
+                    <div class="mb-5 text-center col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-lg-0">
+                        <img style="cursor: pointer;" src="./storage/school_logo/SMKN70-JAKARTA.jpg"
+                            alt="SMKN 70 Jakarta" width="100" />
+                        <p class="mb-0 mt-2">SMKN 70 Jakarta</p>
+                    </div>
+                    <div class="mb-5 text-center col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-lg-0">
+                        <img style="cursor: pointer;" src="./storage/school_logo/SMK-Kampung-Jawa.png"
+                            alt="SMKS Kampung Jawa" width="100" />
+                        <p class="mb-0 mt-2">SMKS Kampung Jawa</p>
+                    </div>
+                    <div class="mb-5 text-center col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-lg-0">
+                        <img style="cursor: pointer;" src="./storage/school_logo/SMPN10-JAKARTA.png"
+                            alt="SMKS Kampung Jawa" width="100" />
+                        <p class="mb-0 mt-2">SMPN 10 Jakarta</p>
+                    </div>
+                </div>
+                <style>
+                    .row.align-items-center.justify-content-center.justify-content-lg-around img {
+                        filter: grayscale(100%);
+                        transition: filter 0.5s ease, transform 0.5s ease;
+                        /* Menambahkan properti transform ke dalam transisi */
+                    }
 
-    <!-- solar icons -->
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+                    .row.align-items-center.justify-content-center.justify-content-lg-around img:hover {
+                        filter: grayscale(0%);
+                        transform: scale(1.1);
+                        /* Mengubah ukuran gambar saat hover */
+                    }
+                </style>
+            </div>
+        </section>
+        <section class="py-5" id="features">
+            <div class="container-lg">
+                <div class="row align-items-center">
+                    <div class="text-center col-md-5 col-lg-6 order-md-0 text-md-start animated-image"><img
+                            class="img-fluid" src="./assets/img/features.png" width="850" alt="Fitur"
+                            style="filter: drop-shadow(10px 8px 18px rgba(0, 0, 0, 0.4));" />
+                    </div>
+                    <div class="col-md-7 col-lg-6 px-sm-5 px-md-0">
+                        <h6 class="fw-bold fs-4 display-3 lh-sm mt-5">Fitur utama <br />aplikasi</h6>
+                        <p class="my-4">Menyediakan fitur-fitur yang mendukung guru dalam <br
+                                class="d-none d-xl-block" />mengelola jurnal mengajar
+                            harian.</p>
+                        <div class="mb-5 d-flex align-items-center">
+                            <div><img class="img-fluid" src="./assets/img/fast.png" width="90" alt="" /></div>
+                            <div class="px-4">
+                                <h5 class="fw-bold text-danger">Tampilan responsif</h5>
+                                <p>Aplikasi ini dapat diakses melalui perangkat <br class="d-none d-xl-block" />apapun,
+                                    baik itu smartphone, tablet, atau komputer.</p>
+                            </div>
+                        </div>
+                        <div class="mb-5 d-flex align-items-center">
+                            <div><img class="img-fluid" src="./assets/img/prototyping.png" width="90" alt="" /></div>
+                            <div class="px-4">
+                                <h5 class="fw-bold text-primary">Pencatatan kehadiran</h5>
+                                <p>Guru dapat mencatat kehadiran siswa secara <br class="d-none d-xl-block" />langsung
+                                    melalui aplikasi ini.</p>
+                            </div>
+                        </div>
+                        <div class="mb-5 d-flex align-items-center">
+                            <div><img class="img-fluid" src="./assets/img/vector.png" width="90" alt="" /></div>
+                            <div class="px-4">
+                                <h5 class="fw-bold text-success">Export data</h5>
+                                <p>Guru dapat mengekspor data jurnal mengajar <br class="d-none d-xl-block" />serta
+                                    absensi dalam bentuk file excel.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-6" id="manfaat"
+            style="background-image:url('./assets/img/hero-bg.png');background-position:bottom;background-size:cover;">
+            <div class="container">
+                <div class="mb-6 row justify-content-center">
+                    <div class="mx-auto mt-4 mb-3 text-center col-lg-6 mb-md-5">
+                        <h6 class="fw-bold fs-4 display-3 lh-sm">Manfaat menggunakan <br class="d-none d-xl-block" />
+                            aplikasi SiJurnal</h6>
+                        <p class="mb-0">Aplikasi ini memberikan kemudahan bagi guru dalam mengelola jurnal mengajar
+                            harian.</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="mb-6 col-md-4">
+                        <div class="text-center px-lg-3"><img class="mb-3 img-fluid"
+                                src="./assets/img/illustrations/2.png" width="150" alt="Kehadiran digital"
+                                style="filter: drop-shadow(10px 8px 18px rgba(0, 0, 0, 0.4));" />
+                            <h5 class="fw-bold">Kehadiran digital</h5>
+                            <p class="mb-md-0">Mencatat kehadiran dan mengelola materi pembelajaran secara digital,
+                                meningkatkan efisiensi dan efektivitas dalam proses pembelajaran.</p>
+                        </div>
+                    </div>
+                    <div class="mb-6 col-md-4">
+                        <div class="text-center px-lg-3"><img class="mb-3 img-fluid"
+                                src="./assets/img/illustrations/3.png" width="150" alt="Kemudahan"
+                                style="filter: drop-shadow(10px 8px 18px rgba(0, 0, 0, 0.4));" />
+                            <h5 class="fw-bold">Kemudahan</h5>
+                            <p class="mb-md-0">Memudahkan guru dalam mengisi jurnal harian, mengelola kehadiran untuk
+                                setiap kelas, serta melihat riwayat jurnal dan absensi yang mereka isi.</p>
+                        </div>
+                    </div>
+                    <div class="mb-6 col-md-4">
+                        <div class="text-center px-lg-3"><img class="mb-3 img-fluid"
+                                src="./assets/img/illustrations/4.png" width="150" alt="Pengawasan"
+                                style="filter: drop-shadow(10px 8px 18px rgba(0, 0, 0, 0.4));" />
+                            <h5 class="fw-bold">Pengawasan</h5>
+                            <p class="mb-md-0">Memungkinkan kepala sekolah untuk melihat segala aktivitas jurnal guru,
+                                kehadiran guru, dan menghubungi atau mengingatkan guru dengan fitur yang tersedia.</p>
+                        </div>
+                    </div>
+                    <div class="mb-6 col-md-4">
+                        <div class="text-center px-lg-3"><img class="mb-3 img-fluid"
+                                src="./assets/img/illustrations/6.png" width="150" alt="Mobilitas"
+                                style="filter: drop-shadow(10px 8px 18px rgba(0, 0, 0, 0.4));" />
+                            <h5 class="fw-bold">Mobilitas</h5>
+                            <p class="mb-md-0">Dapat diakses dari mana saja dan kapan saja, memungkinkan guru untuk
+                                dengan mudah mencatat kehadiran dan mengelola materi pembelajaran.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-8" id="testimonial">
+            <div class="container-lg">
+                <div class="row flex-center">
+                    <div class="text-center col-sm-10 col-md-5 col-lg-5 order-md-0 text-md-start"><img
+                            class="mb-4 img-fluid" src="./assets/img/testi.png" alt="Testimonial" />
+                    </div>
+                    <div class="text-center col-sm-10 col-md-6 col-lg-6 text-md-start offset-md-1">
+                        <h6 class="fw-bold fs-4 display-3 lh-sm"> Apa kata mereka <br
+                                class="d-none d-xl-block" />tentang
+                            aplikasi SiJurnal</h6>
+                        <p class="my-4 pe-xl-5"> Berikut adalah beberapa testimoni dari pengguna aplikasi SiJurnal yang
+                            telah menggunakan aplikasi ini dalam proses pembelajaran mereka.</p>
+                        <div class="carousel slide" id="carouselExampleDark" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active card" data-bs-interval="10000">
+                                    <div class="card-body">
+                                        <div class="row h-100">
+                                            <div class="col-12">
+                                                <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <p class="my-2 text-center text-md-start">Sudah baik, dan terus
+                                                    ditingkatkan
+                                                    agar administrasi sekolah dan guru bisa terbantukan dengan adanya
+                                                    aplikasi SiJurnal ini</p>
+                                            </div>
+                                            <div class="pt-4 col-xl-6 d-flex d-sm-block flex-center">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="img-fluid me-md-3 me-lg-4 rounded-pill"
+                                                        src="https://ui-avatars.com/api/?name=A&color=FFF&background=435EBE"
+                                                        alt="Anonim" style="max-width: 50px; max-height: 50px;" />
+                                                    <div class="ms-3 ms-md-0">
+                                                        <h5 class="mb-0 fw-bold" style="text-align: left!important;">
+                                                            Anonim</h5>
+                                                        <p class="mb-0 fw-normal">Guru SMKN 1 Jakarta</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item card" data-bs-interval="2000">
+                                    <div class="card-body">
+                                        <div class="row h-100">
+                                            <div class="col-12">
+                                                <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <h5 class="my-4 fw-bold lh-sm">User friendly &amp; Customizable</h5>
+                                                <p class="mb-0 text-center text-md-start">Secara umum aplikasi ini
+                                                    membantu guru dalam mengembangkan tingkat kedisiplinan saat
+                                                    mengajar, Terus semangat berkarya, semoga lahir karya lebih
+                                                    multiguna di masa akan datang</p>
+                                            </div>
+                                            <div class="pt-4 col-xl-6 d-flex d-sm-block flex-center">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="img-fluid me-md-3 me-lg-4 rounded-pill"
+                                                        src="https://ui-avatars.com/api/?name=A&color=FFF&background=435EBE"
+                                                        alt="Anonim" style="max-width: 50px; max-height: 50px;" />
+                                                    <div class="ms-3 ms-md-0">
+                                                        <h5 class="mb-0 fw-bold" style="text-align: left!important;">
+                                                            Anonim</h5>
+                                                        <p class="mb-0 fw-normal">Guru SMKN 1 Jakarta</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item card" data-bs-interval="2000">
+                                    <div class="card-body">
+                                        <div class="row h-100">
+                                            <div class="col-12">
+                                                <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg"
+                                                    width="16" height="16" fill="#FFCC00" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <h5 class="my-4 fw-bold lh-sm">User friendly &amp; Customizable</h5>
+                                                <p class="mb-0 text-center text-md-start">Tidak perlu mencatat manual,
+                                                    semua data sudah terdigitalisasi dengan baik, transparan, real time,
+                                                    mudah direkap, user friendly.</p>
+                                            </div>
+                                            <div class="pt-4 col-xl-6 d-flex d-sm-block flex-center">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="img-fluid me-md-3 me-lg-4 rounded-pill"
+                                                        src="https://ui-avatars.com/api/?name=A&color=FFF&background=435EBE"
+                                                        alt="Anonim" style="max-width: 50px; max-height: 50px;" />
+                                                    <div class="ms-3 ms-md-0">
+                                                        <h5 class="mb-0 fw-bold" style="text-align: left!important;">
+                                                            Anonim</h5>
+                                                        <p class="mb-0 fw-normal">Guru SMKN 1 Jakarta</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="position-relative mt-sm-n5"><a
+                                    class="carousel-control-prev carousel-icon z-index-2" href="#carouselExampleDark"
+                                    role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"
+                                        aria-hidden="true"></span><span class="visually-hidden">Previous</span></a><a
+                                    class="carousel-control-next carousel-icon z-index-2" href="#carouselExampleDark"
+                                    role="button" data-bs-slide="next"><span class="carousel-control-next-icon"
+                                        aria-hidden="true"></span><span class="visually-hidden">Next</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-8" id="faq">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="mb-3 text-center col-md-8 col-lg-6">
+                        <h6 class="mb-3 fw-bold fs-4 display-3 lh-sm">Frequently asked questions</h6>
+                        <p class="mb-5">Pertanyaan yang sering diajukan seputar aplikasi SiJurnal.</p>
+                    </div>
+                </div>
+                <div class="row flex-center">
+                    <div class="col-lg-9">
+                        <div class="accordion" id="accordionExample">
+                            <div class="mb-2 accordion-item">
+                                <h2 class="accordion-header" id="heading1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1"><span
+                                            class="mb-0 fw-bold text-start fs-1 text-1000">Apa itu
+                                            Sijurnal?</span></button>
+                                </h2>
+                                <div class="accordion-collapse collapse show" id="collapse1" aria-labelledby="heading1"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-100">Sijurnal adalah sebuah aplikasi yang dirancang
+                                        untuk memudahkan guru dalam melaporkan jurnal harian mereka secara digital.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-2 accordion-item">
+                                <h2 class="accordion-header" id="heading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2"><span
+                                            class="mb-0 fw-bold text-start fs-1 text-1000">Bagaimana Sijurnal membantu
+                                            guru dalam melaporkan jurnal harian?</span></button>
+                                </h2>
+                                <div class="accordion-collapse collapse" id="collapse2" aria-labelledby="heading2"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-100">Sijurnal menyediakan platform yang mudah
+                                        digunakan di mana guru dapat dengan cepat mencatat kegiatan harian mereka,
+                                        termasuk materi yang diajarkan, dan lainnya.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-2 accordion-item">
+                                <h2 class="accordion-header" id="heading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3"><span
+                                            class="mb-0 fw-bold text-start fs-1 text-1000">Apakah Sijurnal mudah
+                                            digunakan?</span></button>
+                                </h2>
+                                <div class="accordion-collapse collapse" id="collapse3" aria-labelledby="heading3"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-100">Ya, Sijurnal dirancang dengan antarmuka yang
+                                        intuitif dan ramah pengguna sehingga guru dapat dengan mudah mengakses dan
+                                        menggunakan fitur-fiturnya tanpa kesulitan.</div>
+                                </div>
+                            </div>
+                            <div class="mb-2 accordion-item">
+                                <h2 class="accordion-header" id="heading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4"><span
+                                            class="mb-0 fw-bold text-start fs-1 text-1000">Apakah Sijurnal tersedia
+                                            secara daring atau offline?</span></button>
+                                </h2>
+                                <div class="accordion-collapse collapse" id="collapse4" aria-labelledby="heading4"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-100">Sijurnal tersedia secara daring, yang berarti
+                                        guru dapat mengaksesnya melalui perangkat apa pun yang terhubung ke internet.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-2 accordion-item">
+                                <h2 class="accordion-header" id="heading5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5"><span
+                                            class="mb-0 fw-bold text-start fs-1 text-1000">Apakah Sijurnal mengamankan
+                                            data pengguna?</span></button>
+                                </h2>
+                                <div class="accordion-collapse collapse" id="collapse5" aria-labelledby="heading5"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-100">Ya, keamanan data pengguna adalah prioritas utama
+                                        kami. Kami menggunakan langkah-langkah keamanan teknologi terbaru untuk
+                                        melindungi informasi pribadi dan data sensitif pengguna.</div>
+                                </div>
+                            </div>
+                            <div class="mb-2 accordion-item">
+                                <h2 class="accordion-header" id="heading6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6"><span
+                                            class="mb-0 fw-bold text-start fs-1 text-1000">Bagaimana cara mendaftar atau
+                                            mengakses Sijurnal?</span></button>
+                                </h2>
+                                <div class="accordion-collapse collapse" id="collapse6" aria-labelledby="heading6"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-100">Proses pendaftaran dan akses dapat bervariasi
+                                        tergantung pada kebijakan dan prosedur yang diterapkan oleh lembaga pendidikan
+                                        atau penyedia aplikasi. Biasanya, pengguna akan diminta untuk membuat akun
+                                        dengan informasi pribadi mereka dan memilih opsi langganan atau akses gratis.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-2 accordion-item">
+                                <h2 class="accordion-header" id="heading7">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapse7"><span
+                                            class="mb-0 fw-bold text-start fs-1 text-1000">Apakah tersedia layanan
+                                            pengguna / Customer Service?</span></button>
+                                </h2>
+                                <div class="accordion-collapse collapse" id="collapse7" aria-labelledby="heading5"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-100">Ya, kami menyediakan layanan dukungan pelanggan
+                                        yang tersedia untuk membantu pengguna dalam menyelesaikan masalah atau
+                                        pertanyaan yang mungkin mereka miliki terkait dengan penggunaan aplikasi
+                                        Sijurnal.</div>
+                                </div>
+                            </div>
+                            <div class="mb-2 accordion-item">
+                                <h2 class="accordion-header" id="heading8">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse8" aria-expanded="true" aria-controls="collapse8"><span
+                                            class="mb-0 fw-bold text-start fs-1 text-1000">Apakah Sijurnal tersedia
+                                            untuk semua tingkat pendidikan?</span></button>
+                                </h2>
+                                <div class="accordion-collapse collapse" id="collapse8" aria-labelledby="heading8"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-100">Ya, Sijurnal dapat digunakan oleh guru dari
+                                        berbagai tingkat pendidikan, mulai dari sekolah dasar hingga perguruan tinggi.
+                                        Aplikasi ini dapat disesuaikan dengan kebutuhan spesifik setiap tingkat
+                                        pendidikan.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-1000">
+            <div class="container">
+                <div class="row flex-center">
+                    <div class="col-auto mb-5"><a
+                            class="pe-2 d-flex align-items-center text-decoration-none fw-bold fs-3" href="#">
+                            <img src="./storage/school_logo/1710324832_sijurnal-logo.svg" id="logo_aplikasi2"
+                                width="150" alt="Logo" style="filter: brightness(0) invert(1);" />
+                        </a></div>
+                </div>
+                <div class="row flex-center">
+                    <div class="col-auto mb-5">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item me-3">
+                                <a href="https://instagram.com/sijurnal.id">
+                                    <i class="bi bi-instagram text-white fs-2"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item me-3">
+                                <a href="https://www.youtube.com/@sijurnal_id">
+                                    <i class="bi bi-youtube text-white fs-2"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row flex-center">
+                    <div class="col-auto text-center">
+                        <p class="mb-0 fs--1 text-700">©2024 SiJurnal. All rights reserved.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Include JS Cookie library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+
+        <!-- Modal -->
+        <div class="modal fade" id="cookieModal" tabindex="-1" aria-labelledby="cookieModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cookieModalLabel">Cookie Consent</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>This website uses cookies to ensure you get the best experience on our website.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            window.onload = function () {
+                if (!Cookies.get('cookie_consent')) {
+                    $('#cookieModal').modal('show');
+                }
+            }
+
+            $('#cookieModal .btn-primary').click(function () {
+                Cookies.set('cookie_consent', 'true', {
+                    expires: 365
+                });
+                $('#cookieModal').modal('hide');
+            });
+        </script>
+
+    </main>
+
+
+    <script src="./vendors/@popperjs/popper.min.js"></script>
+    <script src="./vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="./vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="./assets/js/theme.js"></script>
 </body>
 
 </html>
